@@ -1,78 +1,80 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# print(f"+ = {a + b}\n- = {a - b}\n* = {a * b}")
 
-
-#def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-#    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
- # Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-#    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# print(f'{a} {b} = {c}!')
+# sum = 0
+# beginning = int(input())
+# end = int(input())
+# itr=  0
+# for i  in range (beginning,end):
+#    if i % 2 == 0:
+#       continue
+#    print(i)
 
 
-#print('task 1')
-#print('Nothing\nwill work\nunless you do')
-
-#print('task 2')
-#print('Anyone who\n stops\n    learning is old\n        whether twenty or eighty')
-
-#print('task 3')
-#a = int(input('input the first number'))
-#b = int(input('input the second number'))
-#print("+ =", a + b, "\n- =", a - b, "\n* =", a * b)
+# for i  in range (beginning,end + 1):
+#    sum += i
+#    itr+=1
+# print(sum,sum / itr )
+#
 from re import match
 
-number = int(input('vvedite pervoe chislo'))
-procent = int(input('vvedite procent chtoby otnyat'))
-print(number - ((number/100) * procent))
 
-width = int(input('vvedite shirinu'))
-height = int(input('vvedite visotu'))
-print('ploshad pryamougolnika =>', width * height)
+def facrec(a):
+    if a == 0 or a == 1:
+        return 1
+    return a * facrec(a - 1)
 
-oddOrEven = int(input('proverka na chetnost'))
-if(oddOrEven % 2 == 0):
-    print(oddOrEven, 'is even')
-else:
-    print(oddOrEven, 'is odd')
-
-multipleSeven = int(input('proverka na kratnost 7'))
-if(multipleSeven % 7 == 0):
-    print(multipleSeven, "is multiple 7")
-else:
-    print(multipleSeven, "is not multiple 7")
-
-firstNum = int(input('vvedite pervoe chislo'))
-secondNum = int(input('vvedite vtoroe chislo'))
-if(firstNum > secondNum):
-    print(firstNum, 'max')
-else:
-    print(secondNum,'max')
-if (firstNum > secondNum):
-    print(secondNum, 'min')
-else:
-    print(firstNum, 'min')
-
-choice = input('select an action')
-
-match choice:
-    case '+':
-        print(firstNum + secondNum)
-    case '-':
-        print(firstNum - secondNum)
-    case 'mid':
-        print((firstNum + secondNum) / 2)
-    case '*':
-        print(firstNum * secondNum)
-    case _:
-        print('invalid statement')
+print(facrec(5))
 
 
-#print(f"+ = {a + b}\n- = {a - b}\n* = {a * b}")
+#num = int(input('enter the num'))
 
-#print(f'{a} {b} = {c}!')
+#fac = 0
+#for i in range(1, num + 1):
+#    fac = fac * i
+#print(fac)
+#char = input('enter the char')
+
+#for i in range(num):
+#   print("*",end="")
+#print('')
+
+#for i in range(num):
+#   print(char,end="")
+
+# while True:
+#    money = int(input('vvedite summu deneg'))
+
+#    print('welcome to the money converter')
+
+ #   print('1 - rubl')
+ #   print('2 - usd')
+ #   print('any other - exit')
+ #   choice = int(input('vvedite svoi vybor'))
+ #   match choice:
+ #       case 1:
+ #           print(money * 5,'rub')
+ #      case 2:
+ #           print(money * 480,'usd')
+ #       case _:
+ #          break
+
+num1 = int(input('enter the first num'))
+num2 = int(input('enter the second num'))
+choice = 0
+win = False
+
+choice = int(input('your guess?'))
+for i in range(num1, num2 + 1):
+        if (choice == i):
+            print( "!"  + str(i) + '!', end=" ")
+            continue
+
+        print(i,end=" ")
+
+
+
+
+
+
