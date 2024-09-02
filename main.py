@@ -17,23 +17,44 @@
 #    itr+=1
 # print(sum,sum / itr )
 #
+import array
 from re import match
 
 
-def facrec(a):
-    if a == 0 or a == 1:
-        return 1
-    return a * facrec(a - 1)
-
-print(facrec(5))
 
 
-#num = int(input('enter the num'))
+num = int(input('enter the num'))
 
-#fac = 0
-#for i in range(1, num + 1):
+fac = 1
+sum = 0
+print(num)
+
+#for i in range(1,num + 1):
 #    fac = fac * i
-#print(fac)
+#     sum += fac
+#print(sum)
+
+#for i in range(1,num + 1):
+#    for j in range(1,i + 1):
+#        print(j,end="")
+#    print()
+#length = int(input('vvedite dlinu'))
+#arr1 = array.array('i',[])
+#for i in range(0,length):
+#   n = int(input())
+#   arr1.append(n)
+
+
+#for i in arr1:
+#    if any(i != j for j in range(0, arr1[0])):
+#        print(i)
+
+for i in range(1,10):
+    if i * i > num:
+        break
+    print(i * i)
+
+
 #char = input('enter the char')
 
 #for i in range(num):
@@ -60,18 +81,11 @@ print(facrec(5))
  #       case _:
  #          break
 
-num1 = int(input('enter the first num'))
-num2 = int(input('enter the second num'))
-choice = 0
-win = False
 
-choice = int(input('your guess?'))
-for i in range(num1, num2 + 1):
-        if (choice == i):
-            print( "!"  + str(i) + '!', end=" ")
-            continue
 
-        print(i,end=" ")
+
+
+
 
 
 
