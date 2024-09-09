@@ -1,85 +1,49 @@
 
-# print(f"+ = {a + b}\n- = {a - b}\n* = {a * b}")
+tupleOne = (1,2,3,4,5)
+tupleTwo = (1,4,3,7,5)
+res = False
+checker = 0
+for i in tupleOne:
+    checker = 0
+    for j in tupleTwo:
+        checker+=1
+        if(checker == 2):
+            continue
+        if(j == i):
+            print(j)
 
-# print(f'{a} {b} = {c}!')
-# sum = 0
-# beginning = int(input())
-# end = int(input())
-# itr=  0
-# for i  in range (beginning,end):
-#    if i % 2 == 0:
-#       continue
-#    print(i)
+counter = 0
+fruits = ('banana','apple','orange','bananaorange')
+fruit = input('enter your fruit name')
+for i in fruits:
+    if fruit == i:
+        counter+=1
+print(counter)
+counter=0
+for i in fruits:
+    if fruit in i:
+        counter+=1
+print(counter)
 
+cars = ('bmw','lada','audi','audi','audi')
+list_cars = list(cars)
+new_tuple = list()
+car = input('enter your car')
+change_word = input('enter the word for replacement')
+for i in list_cars:
+        if i != car:
+            new_tuple.append(i)
+        if i == car:
+            i = change_word
+            new_tuple.append(i)
+cars = tuple(new_tuple)
+print(cars)
 
-# for i  in range (beginning,end + 1):
-#    sum += i
-#    itr+=1
-# print(sum,sum / itr )
-#
-import array
-from re import match
-
-
-
-
-num = int(input('enter the num'))
-
-fac = 1
-sum = 0
-print(num)
-
-#for i in range(1,num + 1):
-#    fac = fac * i
-#     sum += fac
-#print(sum)
-
-#for i in range(1,num + 1):
-#    for j in range(1,i + 1):
-#        print(j,end="")
-#    print()
-#length = int(input('vvedite dlinu'))
-#arr1 = array.array('i',[])
-#for i in range(0,length):
-#   n = int(input())
-#   arr1.append(n)
+nums = (1,2,3,11,22,33,44,111,222,333,444,555)
+for
 
 
-#for i in arr1:
-#    if any(i != j for j in range(0, arr1[0])):
-#        print(i)
 
-for i in range(1,10):
-    if i * i > num:
-        break
-    print(i * i)
-
-
-#char = input('enter the char')
-
-#for i in range(num):
-#   print("*",end="")
-#print('')
-
-#for i in range(num):
-#   print(char,end="")
-
-# while True:
-#    money = int(input('vvedite summu deneg'))
-
-#    print('welcome to the money converter')
-
- #   print('1 - rubl')
- #   print('2 - usd')
- #   print('any other - exit')
- #   choice = int(input('vvedite svoi vybor'))
- #   match choice:
- #       case 1:
- #           print(money * 5,'rub')
- #      case 2:
- #           print(money * 480,'usd')
- #       case _:
- #          break
 
 
 
